@@ -9,6 +9,7 @@ public class MainController {
 
     @RequestMapping("/ssr")
     public String ssr(Model model) {
+        model.addAttribute("pageTitle", "SSR Test Page");
         model.addAttribute("name", "김땡땡");
         model.addAttribute("age", "20");
         return "ssr";
